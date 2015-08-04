@@ -1,0 +1,22 @@
+{
+    "name": "opb/forex-rates",
+    "description": "A Forex Rate Service for Laravel",
+    "require": {
+        "guzzlehttp/guzzle": "~5.0",
+        "laravel/framework": "~5.0",
+        "mathiasverraes/money": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olly Butterfield",
+            "email": "olly@opb.me.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Opb\\Forex\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
