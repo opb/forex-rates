@@ -51,7 +51,7 @@ class CurrencylayerRateFetcher implements RateFetcher{
     protected function formatRates($rawRates)
     {
         if(!isset($rawRates['quotes'])){
-            throw new ForexException('Response from API in unexpected format');
+            throw new ForexException('Response from API in unexpected format: '.json_encode($rawRates));
         }
 
         $rawRates = $rawRates['quotes'];
