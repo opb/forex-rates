@@ -28,7 +28,7 @@ Get Forex rates and store in cache. Docs aren't great. If you're interested in u
 	    
 	],
 	```
-4. To use, simply make use of the ForexService class and run `getRate()` to get the rate between two currencies, or `convert` to convery an amount of a certain currency into another currency. Makes extensive use of the `mathiasverraes/money` money package.
+4. To use, simply make use of the ForexService class and run `getRate()` to get the rate between two currencies, or `convert()` to convery an amount of a certain currency into another currency. Makes extensive use of the `mathiasverraes/money` money package.
 
 ### Examples
 
