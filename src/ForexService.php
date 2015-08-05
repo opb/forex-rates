@@ -26,9 +26,10 @@ class ForexService{
     public function getRate(Currency $from, Currency $to, DateTime $date = null)
     {
         $rates = $this->getRatesFromStore($date);
-        $dollarFrom = $rates[$from->getName()];
+        $dollarFrom = $from->getName() == 'USD'? 1.0 : $rates[$from->getName()];
+        $dollarTo = $to->getName() == 'USD'? 1.0 : $rates[$to->getName()];
 
-        $rate = $rates[$to->getName()] / $dollarFrom;
+        $rate = $dollarTo / $dollarFrom;
 
         return new CurrencyPair($from, $to, $rate);
     }
