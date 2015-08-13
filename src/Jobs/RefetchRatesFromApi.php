@@ -10,10 +10,10 @@ use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Contracts\Cache\Repository as Cache;
 
-class RefetchRatesFromApi implements SelfHandling, ShouldQueue{
+class RefetchRatesFromApi implements SelfHandling{
 
-    use Queueable;
-    use InteractsWithQueue;
+//    use Queueable;
+//    use InteractsWithQueue;
 
     /** @var DateTime */
     protected $date;
