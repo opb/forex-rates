@@ -29,7 +29,7 @@ class ForexService{
         $dollarFrom = $from->getName() == 'USD'? 1.0 : $rates[$from->getName()];
         $dollarTo = $to->getName() == 'USD'? 1.0 : $rates[$to->getName()];
 
-        $rate = $dollarTo / $dollarFrom;
+        $rate = $dollarFrom / $dollarTo; 
 
         return new CurrencyPair($from, $to, $rate);
     }
