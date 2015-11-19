@@ -45,7 +45,7 @@ class CurrencylayerRateFetcher implements RateFetcher{
     {
         $response = $this->guzzle->get($url, ['timeout' => self::HTTP_TIMEOUT]);
 
-        return $response->json();
+        return json_decode($response->getBody(), true);
     }
 
     protected function formatRates($rawRates)
