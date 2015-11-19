@@ -2,7 +2,7 @@
     "name": "opb/forex-rates",
     "description": "A Forex Rate Service for Laravel",
     "require": {
-        "guzzlehttp/guzzle": "~5.0",
+        "guzzlehttp/guzzle": "~5.0|~6.0",
         "laravel/framework": "~5.0",
         "mathiasverraes/money": "^1.2"
     },
