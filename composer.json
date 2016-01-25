@@ -4,7 +4,7 @@
     "require": {
         "guzzlehttp/guzzle": "~5.0|~6.0",
         "laravel/framework": "~5.0",
-        "mathiasverraes/money": "^1.2"
+        "mathiasverraes/money": "dev-nextrelease#f496451bbb6a0cec33bb04f2b6813e9af8ceba37"
     },
     "license": "MIT",
     "authors": [
